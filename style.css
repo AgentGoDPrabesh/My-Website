@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* Home Section */
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background: url('background.jpg') no-repeat center center/cover;
+}
+
+.hero h3 span {
+  color: #DC143C;
+}
+
+.hero h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: #DC143C;
+}
+
+.cta {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.cta:hover {
+  background: #fff;
+  color: #000;
+}
+/* Contact Section suru */
+#contact {
+  background: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.section-title span {
+  color: #DC143C;
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.icon img {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.contact-info h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.contact-info h2, .contact-info h3 {
+  font-size: 16px;
+  color: #666;
+  margin: 5px 0;
+}
+ /* Contact Section end */
+
+/* Projects Section */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 15px;
+}
+
+.gallery img {
+  width: 70%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
+
+.gallery-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover::after {
+  opacity: 1;
+}
+
+
+/* photowala project ko end */
+
+/* About Section Styles */
+#about {
+  padding: 50px 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+#about h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #333;
+}
+#about h1 span, .about-text span, .timeline-item h1 {
+  color: #DC143C;
+  font-weight: bold;
+}
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.about-text, .skills, .timeline {
+  flex: 1 1 300px;
+  margin: 20px;
+  text-align: left;
+  max-width: 600px;
+}
+.about-text p, .skills ul li, .timeline-item p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+}
+.skills h2, .timeline h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #333;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+}
+.skills ul li {
+  background: #746064;
+  color: white;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+.timeline-item {
+  margin-bottom: 20px;
+}
+.timeline-item h3 {
+  margin: 0;
+  color: #000;
+}
+.profile-image {
+  text-align: center;
+}
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+.timeline-image {
+  width: 100%;
+  height: 100px;
+  background: #ccc;
+  margin-bottom: 10px;
+}
+
+ /* about khatam section */
+
+/* Navbar styles */
+nav {
+  background: #333;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  padding: 10px;
+}
+
+nav ul li a:hover {
+  background: #555;
+  border-radius: 5px;
+}
+
+/* Sections */
+section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#home {
+  background: #f4f4f4;
+}
+
+#about {
+  background: #ddd;
+}
+
+#projects {
+  background: #bbb;
+}
+
+#contact {
+  background: #999;
+}
+
+/*button */
+.cta{
+  display: inline-block;
+  padding: 10px 30px;
+  color: crimson;
+  background-color: transparent;
+  border: 2px solid crimson;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 30px;
+  transition:.3s ease background-color;
+
+}
+/*HOVER FOR BUTTON*/
+.cta:hover{
+  color: white;
+  background-color: crimson;
+}
+ 
+
+/* FOOTER SECTION SURU */
+footer {
+  background: #202425;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-title {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.footer-subtitle {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin: 10px 0;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  font-size: 24px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #d3304b;
+}
+
+.footer-copyright {
+  margin-top: 10px;
+  font-size: 14px;
+}
+/* FOOTER END  */
